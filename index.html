@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Barbie Academy</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fde0e0;
+        }
+
+        .navbar {
+            background-color: #f7c1d9;
+            color: rgb(255, 255, 255);
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar a {
+            color: rgb(255, 221, 221);
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            background-color: #ffffff;
+            padding: 50px;
+            text-align: center;
+            color: rgb(57, 57, 57);
+        }
+        .about-container {
+            padding: 40px;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            gap: 30px;
+            color: #7b7879;
+            align-items: center;
+        }
+        .about-text {
+             width: 60%; 
+             font-size: 16px; 
+            }
+
+        .about-img img {
+            width: 400px;
+            border-radius: 4px;
+        }
+
+        .btn {
+            background-color: #ffa3d1;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #faf5f5;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <h2>Barbie Academy</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="file.html">Grade Calculator</a>
+        <a href="clubs.html">Clubs</a>
+    </div>
+</div>
+
+<section id="home">
+    <div class="header">
+        <h1>Welcome to Barbie Academy</h1>
+        <p>Excellence in Education Since 2011</p>
+    </div>
+
+    <div class="about-container">
+        <div class="about-text">
+            <h2>About Our School</h2>
+            <p>
+                Princess Charm School where Blair Willows learns to become a princess.
+                To train girls to become princesses or "lady royals,"
+                 who are a princess's most trusted advisors.
+            </p>
+            <a class="btn">Read More</a>
+        </div>
+
+        <div class="about-img">
+            <img src="https://i.pinimg.com/736x/07/a6/98/07a698de8c2053e46c5ab1a19dd49fe5.jpg">
+        </div>
+    </div>
+</section>
+<py-script src="main.py"></py-script>
+</body>
+</html>

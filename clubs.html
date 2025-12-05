@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbie Academy Clubs</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+    <style>
+          body {
+            font-family: Arial, sans-serif;
+            background: #fdf0ff;
+        }
+
+        .club-box {
+            width: 450px;
+            margin: 40px auto;
+            padding: 25px;
+            background: #ffe2fc;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(247, 170, 216, 0.2);
+        }
+
+        select, button {
+            width: 80%;
+            padding: 10px;
+            margin-top: 12px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #ffb6ea;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ffd6f6;
+        }
+         .navbar {
+            background-color: #f7c1d9;
+            color: rgb(255, 255, 255);
+            padding: 10px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar a {
+            color: rgb(255, 221, 221);
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+    <h2>Barbie Academy</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="file.html">Grade Calculator</a>
+        <a href="clubs.html">Clubs</a>
+    </div>
+</div>
+    <div class="club-box">
+        <h2>School Clubs</h2>
+        <select id="club-select">
+            <option value="Science Club">Science Club</option>
+            <option value="Varsity">Varsity</option>
+            <option value="Math Club">Math Club</option>
+        </select>
+
+        <button py-click="show_club">Show Club Info</button>
+
+        <div id="club-output"></div>
+    </div>
+    <py-script src="clubs.py"></py-script>
+
+</body>
+</html>
+
+
